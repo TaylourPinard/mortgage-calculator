@@ -41,19 +41,19 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div Name='container'>
+      <div className='container'>
         <h3>Mortgage Calculator</h3>
         <form>
           <div className='form-group row'>
-            <label htmlFor='loan-balance' class='col-sm-2'>Loan Balance</label>
-            <input name='balance' type='number' class='col-sm-2' id='loan-balance' step='1000' value={this.state.balance} onChange={this.handleInputChange} />
+            <label htmlFor='loan-balance' className='col-sm-2'>Loan Balance</label>
+            <input name='balance' type='number' className='col-sm-2' id='loan-balance' step='1000' value={this.state.balance} onChange={this.handleInputChange} />
           </div>
           <div className='form-group row'>
-            <label htmlFor='rate' class='col-sm-2'>Intrest Rate (%) </label>
-            <input name='rate' type='number' class='col-sm-2' id='rate' step='0.01' value={this.state.rate} onChange={this.handleInputChange} />
+            <label htmlFor='rate' className='col-sm-2'>Intrest Rate (%) </label>
+            <input name='rate' type='number' className='col-sm-2' id='rate' step='0.01' value={this.state.rate} onChange={this.handleInputChange} />
           </div>
           <div className='form-group row'>
-              <label htmlFor='term' class='col-sm-1'>Loan Term (years) </label>
+              <label htmlFor='term' className='col-sm-1'>Loan Term (years) </label>
               <select value={this.state.term} onChange={this.handleInputChange} name='term' id='term'>
                 <option value='15'>15</option>
                 <option value='30'>30</option>
